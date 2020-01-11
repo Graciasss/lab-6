@@ -25,9 +25,9 @@ public class AppWindow extends Frame {
 
             @Override
             public void mouseMoved(MouseEvent e) {
-                int x = getRandomNumberInRange(0, 1920 - 100);
-                int y = getRandomNumberInRange(0, 1080 - 50);
-                button.setBounds(x, y, 100, 50);
+                int x = (int)(Math.random()*(appwin.getWidth()-button.getWidth()));
+                int y = (int)(Math.random()*(appwin.getHeight()-button.getHeight()));
+                button.setBounds(x, y, button.getWidth(), button.getHeight()));
             }
         });
 
